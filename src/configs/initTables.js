@@ -45,9 +45,7 @@ bcrypt.hash('1234', saltRounds, (error, hash) => {
         created_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         updated_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         last_login_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        skillpoints INT DEFAULT 0,
-        faction_id INT,
-        FOREIGN KEY (faction_id) REFERENCES Faction(faction_id)
+        skillpoints INT DEFAULT 0
       );
 
       -- Create FitnessChallenge table
